@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客管理登陆</title>
+    <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+
+    <br/>
+    <br/>
+    <br/>
+    <div class="m-container-small m-padded-tb-massive" style="max-width: 30em !important;">
+        <div class="ui container">
+            <div class="ui middle aligned center aligned grid">
+                <div class="column">
+                    <h2 class="ui teal image header">
+                        <div class="content">
+                            管理后台登陆
+                        </div>
+                    </h2>
+                    <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
+                        <div class="ui segment">
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="user icon"></i>
+                                    <input type="text" name="username" placeholder="用户名">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="lock icon"></i>
+                                    <input type="password" name="password" placeholder="密码">
+                                </div>
+                            </div>
+                            <button id="button" class="ui fluid large teal submit button">登 陆</button>
+                        </div>
+                        <!-- 这里是表单验证的错误的提示区域 -->
+                        <div class="ui error mini message"></div>
+
+                        <div id="load_error" class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  引入jq，以及semantic ui的cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script>
+        $('.ui.form').form({
+            fields : {
+                username : {
+                    identifier : 'username',
+                    rules: [{
+                        type : 'empty',
+                        prompt : '请输入用户名'
+                    }]
+                },
+                password : {
+                    identifier : 'password',
+                    rules: [{
+                        type : 'empty',
+                        prompt : '请输入密码'
+                    }]
+                }
+            }
+        });
+        //TODO 方案一：我想要一个效果，使用jQ，在一个div的display由none变为block时检测另一个div的display值
+        //TODO 如果另一个是block，就将其变为none，否则不变
+        //TODO 方案二：在点击事件发生前监听，然后执行某个动作
+        $('#button').click(function () {
+            $('#load_error').css("display", "none");
+        });
+    </script>
+</body>
+</html>

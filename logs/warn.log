@@ -1,0 +1,5 @@
+[lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-02 12:39:29.788][WARN ][http-nio-8080-exec-5][DirectJDKLog.java:173] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [345] milliseconds.
+[lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-02 12:52:32.927][WARN ][http-nio-8080-exec-4][DirectJDKLog.java:173] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [365] milliseconds.
+[lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-02 13:00:48.297][WARN ][HikariPool-1 housekeeper][HikariPool.java:787] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m33s568ms41µs526ns).
+[lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-02 13:01:12.635][WARN ][http-nio-8080-exec-4][DirectJDKLog.java:173] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [357] milliseconds.
+[lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-02 13:06:29.788][WARN ][http-nio-8080-exec-4][DirectJDKLog.java:173] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [341] milliseconds.

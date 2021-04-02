@@ -1,0 +1,529 @@
+2021-03-31 12:23:08.720 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:23:08.730 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:23:08.730 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:23:15.533 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:23:15.533 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:23:15.533 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:23:15.884 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:23:16.724 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:23:17.905 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-31 12:23:18.875 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-31 12:23:19.306 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-03-31 12:23:21.357 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-03-31 12:23:21.467 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:23:22.587 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:23:24.228 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:23:24.318 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 18.322 seconds (JVM running for 22.648)
+2021-03-31 12:23:32.191 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:23:32.537 [ http-nio-8080-exec-1 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/, Exception : Missing URI template variable 'id' for method parameter of type Integer
+2021-03-31 12:23:54.018 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2021-03-31 12:23:54.068 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2021-03-31 12:23:54.178 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:23:54.178 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 662 ] - No active profile set, falling back to default profiles: default
+2021-03-31 12:23:54.438 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:23:54.438 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:23:54.438 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:23:54.458 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:23:54.478 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2021-03-31 12:23:57.069 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:23:57.069 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:23:57.069 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:23:57.439 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:23:57.439 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:23:57.439 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:23:57.459 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:23:57.510 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:23:57.520 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-2 - Starting...
+2021-03-31 12:23:57.550 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-2 - Start completed.
+2021-03-31 12:23:57.550 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:23:57.560 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:23:57.870 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:23:58.030 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.008 seconds (JVM running for 56.363)
+2021-03-31 12:24:00.821 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-2 - Shutdown initiated...
+2021-03-31 12:24:00.851 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-2 - Shutdown completed.
+2021-03-31 12:24:00.961 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:24:00.961 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:24:00.961 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:24:01.302 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:24:01.302 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:24:01.302 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:24:01.312 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:24:01.392 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:24:01.402 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-3 - Starting...
+2021-03-31 12:24:01.432 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-3 - Start completed.
+2021-03-31 12:24:01.432 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:24:01.452 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:24:02.002 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:24:02.022 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.107 seconds (JVM running for 60.356)
+2021-03-31 12:24:06.227 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:24:06.239 [ http-nio-8080-exec-1 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/, Exception : Missing URI template variable 'id' for method parameter of type Integer
+2021-03-31 12:24:13.036 [ http-nio-8080-exec-2 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/, Exception : Missing URI template variable 'id' for method parameter of type Integer
+2021-03-31 12:26:45.792 [ Thread-16 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-3 - Shutdown initiated...
+2021-03-31 12:26:45.832 [ Thread-16 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-3 - Shutdown completed.
+2021-03-31 12:26:46.123 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:26:46.123 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:26:46.123 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:26:46.575 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:26:46.575 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:26:46.575 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:26:46.585 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:26:46.625 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:26:46.635 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-4 - Starting...
+2021-03-31 12:26:46.665 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-4 - Start completed.
+2021-03-31 12:26:46.665 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:26:46.675 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:26:46.835 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:26:46.855 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.932 seconds (JVM running for 225.192)
+2021-03-31 12:26:48.763 [ Thread-21 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-4 - Shutdown initiated...
+2021-03-31 12:26:48.793 [ Thread-21 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-4 - Shutdown completed.
+2021-03-31 12:26:48.923 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:26:48.923 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:26:48.923 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:26:49.243 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:26:49.253 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:26:49.253 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:26:49.263 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:26:49.333 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:26:49.343 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-5 - Starting...
+2021-03-31 12:26:49.363 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-5 - Start completed.
+2021-03-31 12:26:49.363 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:26:49.383 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:26:49.944 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:26:49.964 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.084 seconds (JVM running for 228.295)
+2021-03-31 12:26:57.962 [ http-nio-8080-exec-10 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:26:57.979 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:26:57.998 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:30:15.777 [ Thread-26 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-5 - Shutdown initiated...
+2021-03-31 12:30:15.817 [ Thread-26 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-5 - Shutdown completed.
+2021-03-31 12:30:16.007 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:30:16.007 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:30:16.007 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:30:16.437 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:30:16.437 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:30:16.437 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:30:16.447 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:30:16.477 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:30:16.487 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-6 - Starting...
+2021-03-31 12:30:16.517 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-6 - Start completed.
+2021-03-31 12:30:16.517 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:30:16.527 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:30:16.717 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:30:16.767 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.835 seconds (JVM running for 435.104)
+2021-03-31 12:30:18.608 [ Thread-31 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-6 - Shutdown initiated...
+2021-03-31 12:30:18.628 [ Thread-31 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-6 - Shutdown completed.
+2021-03-31 12:30:18.718 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:30:18.718 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:30:18.718 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:30:19.109 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:30:19.109 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:30:19.109 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:30:19.119 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:30:19.189 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:30:19.189 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-7 - Starting...
+2021-03-31 12:30:19.219 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-7 - Start completed.
+2021-03-31 12:30:19.219 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:30:19.239 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:30:19.769 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:30:19.789 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.101 seconds (JVM running for 438.123)
+2021-03-31 12:30:23.221 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:30:23.235 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:30:23.241 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:35:53.202 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:35:53.202 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:36:03.542 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:36:03.543 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:36:40.115 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:36:40.116 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:36:53.878 [ Thread-36 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-7 - Shutdown initiated...
+2021-03-31 12:36:53.898 [ Thread-36 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-7 - Shutdown completed.
+2021-03-31 12:36:54.198 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:36:54.198 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:36:54.198 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:36:54.539 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:36:54.539 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:36:54.539 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:36:54.579 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:36:54.659 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:36:54.669 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-8 - Starting...
+2021-03-31 12:36:54.699 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-8 - Start completed.
+2021-03-31 12:36:54.699 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:36:54.709 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:36:54.849 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:36:54.869 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.763 seconds (JVM running for 833.206)
+2021-03-31 12:36:56.760 [ Thread-41 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-8 - Shutdown initiated...
+2021-03-31 12:36:56.790 [ Thread-41 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-8 - Shutdown completed.
+2021-03-31 12:36:56.880 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:36:56.880 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:36:56.880 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:36:57.140 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:36:57.140 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:36:57.140 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:36:57.150 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:36:57.200 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:36:57.210 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-9 - Starting...
+2021-03-31 12:36:57.230 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-9 - Start completed.
+2021-03-31 12:36:57.240 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:36:57.250 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:36:57.770 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:36:57.780 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.931 seconds (JVM running for 836.115)
+2021-03-31 12:37:02.382 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:37:02.397 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:37:02.401 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:37:59.168 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:37:59.168 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:38:22.922 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:38:22.922 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:52:14.355 [ Thread-46 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-9 - Shutdown initiated...
+2021-03-31 12:52:14.405 [ Thread-46 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-9 - Shutdown completed.
+2021-03-31 12:52:14.535 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:52:14.535 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:52:14.535 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:52:14.905 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:52:14.905 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:52:14.905 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:52:14.925 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:52:14.975 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:52:14.975 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-10 - Starting...
+2021-03-31 12:52:15.016 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-10 - Start completed.
+2021-03-31 12:52:15.016 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:52:15.036 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:52:15.146 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:52:15.176 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.701 seconds (JVM running for 1753.505)
+2021-03-31 12:52:17.001 [ Thread-51 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-10 - Shutdown initiated...
+2021-03-31 12:52:17.041 [ Thread-51 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-10 - Shutdown completed.
+2021-03-31 12:52:17.131 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:52:17.131 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:52:17.131 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:52:17.451 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:52:17.451 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:52:17.451 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:52:17.471 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:52:17.531 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:52:17.531 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-11 - Starting...
+2021-03-31 12:52:17.561 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-11 - Start completed.
+2021-03-31 12:52:17.561 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:52:17.571 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:52:18.001 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:52:18.021 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.927 seconds (JVM running for 1756.35)
+2021-03-31 12:52:22.771 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:52:22.784 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:52:22.788 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:58:29.935 [ Thread-56 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-11 - Shutdown initiated...
+2021-03-31 12:58:29.955 [ Thread-56 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-11 - Shutdown completed.
+2021-03-31 12:58:30.055 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:58:30.055 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 662 ] - No active profile set, falling back to default profiles: default
+2021-03-31 12:58:30.265 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:58:30.265 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:58:30.265 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:58:30.285 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:58:30.295 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Stopping service [Tomcat]
+2021-03-31 12:58:32.747 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:58:32.747 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:58:32.747 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:58:32.997 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:58:32.997 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:58:32.997 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:58:33.017 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:58:33.067 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:58:33.077 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-12 - Starting...
+2021-03-31 12:58:33.107 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-12 - Start completed.
+2021-03-31 12:58:33.107 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:58:33.117 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:58:33.417 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:58:33.437 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.767 seconds (JVM running for 2131.77)
+2021-03-31 12:58:36.410 [ Thread-61 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-12 - Shutdown initiated...
+2021-03-31 12:58:36.440 [ Thread-61 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-12 - Shutdown completed.
+2021-03-31 12:58:36.590 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:58:36.590 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:58:36.590 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:58:36.920 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:58:36.920 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:58:36.920 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:58:36.940 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:58:37.000 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:58:37.000 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-13 - Starting...
+2021-03-31 12:58:37.020 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-13 - Start completed.
+2021-03-31 12:58:37.020 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:58:37.030 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:58:37.601 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:58:37.611 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.087 seconds (JVM running for 2135.946)
+2021-03-31 12:58:42.989 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:58:43.003 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:58:43.011 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:58:47.558 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:58:47.558 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:58:48.442 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:58:48.442 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:59:14.555 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:59:14.556 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 12:59:47.417 [ Thread-69 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-13 - Shutdown initiated...
+2021-03-31 12:59:47.457 [ Thread-69 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-13 - Shutdown completed.
+2021-03-31 12:59:47.647 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:59:47.647 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:59:47.647 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:59:48.097 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:59:48.097 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:59:48.097 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:59:48.127 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:59:48.197 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:59:48.247 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-14 - Starting...
+2021-03-31 12:59:48.287 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-14 - Start completed.
+2021-03-31 12:59:48.287 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:59:48.317 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:59:48.497 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:59:48.517 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.958 seconds (JVM running for 2206.853)
+2021-03-31 12:59:50.431 [ Thread-74 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-14 - Shutdown initiated...
+2021-03-31 12:59:50.471 [ Thread-74 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-14 - Shutdown completed.
+2021-03-31 12:59:50.601 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 12:59:50.601 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 12:59:50.601 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 12:59:50.973 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:59:50.973 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 12:59:50.973 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 12:59:50.983 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 12:59:51.113 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 12:59:51.113 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-15 - Starting...
+2021-03-31 12:59:51.163 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-15 - Start completed.
+2021-03-31 12:59:51.163 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 12:59:51.173 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 12:59:51.863 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 12:59:51.873 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.316 seconds (JVM running for 2210.21)
+2021-03-31 12:59:55.776 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 12:59:55.788 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 12:59:55.791 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 13:00:41.783 [ Thread-79 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-15 - Shutdown initiated...
+2021-03-31 13:00:41.823 [ Thread-79 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-15 - Shutdown completed.
+2021-03-31 13:00:42.053 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 13:00:42.063 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 13:00:42.063 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 13:00:42.513 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:00:42.513 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 13:00:42.513 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 13:00:42.523 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 13:00:42.563 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 13:00:42.563 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-16 - Starting...
+2021-03-31 13:00:42.593 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-16 - Start completed.
+2021-03-31 13:00:42.593 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 13:00:42.613 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 13:00:42.833 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:00:42.873 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.863 seconds (JVM running for 2261.209)
+2021-03-31 13:00:44.844 [ Thread-84 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-16 - Shutdown initiated...
+2021-03-31 13:00:44.874 [ Thread-84 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-16 - Shutdown completed.
+2021-03-31 13:00:44.994 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 13:00:44.994 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 13:00:44.994 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 13:00:45.354 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:00:45.354 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 13:00:45.354 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 13:00:45.385 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 13:00:45.455 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 13:00:45.455 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-17 - Starting...
+2021-03-31 13:00:45.475 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-17 - Start completed.
+2021-03-31 13:00:45.475 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 13:00:45.485 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 13:00:45.975 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:00:45.995 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.041 seconds (JVM running for 2264.329)
+2021-03-31 13:00:50.877 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 13:00:50.892 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 13:00:50.897 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 13:04:43.875 [ Thread-89 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-17 - Shutdown initiated...
+2021-03-31 13:04:43.905 [ Thread-89 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-17 - Shutdown completed.
+2021-03-31 13:04:44.175 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 13:04:44.175 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 13:04:44.175 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 13:04:44.645 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:04:44.645 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 13:04:44.645 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 13:04:44.655 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 13:04:44.695 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 13:04:44.705 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-18 - Starting...
+2021-03-31 13:04:44.735 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-18 - Start completed.
+2021-03-31 13:04:44.735 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 13:04:44.745 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 13:04:44.885 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:04:44.926 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.917 seconds (JVM running for 2503.255)
+2021-03-31 13:04:46.850 [ Thread-94 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-18 - Shutdown initiated...
+2021-03-31 13:04:46.880 [ Thread-94 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-18 - Shutdown completed.
+2021-03-31 13:04:46.980 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 13:04:46.980 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 13:04:46.980 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 13:04:47.270 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:04:47.270 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 13:04:47.270 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 13:04:47.280 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 13:04:47.360 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 13:04:47.370 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-19 - Starting...
+2021-03-31 13:04:47.400 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-19 - Start completed.
+2021-03-31 13:04:47.400 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 13:04:47.410 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 13:04:47.981 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:04:48.001 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.052 seconds (JVM running for 2506.334)
+2021-03-31 13:04:50.127 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 13:04:50.144 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 13:04:50.151 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 13:30:57.340 [ Thread-99 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-19 - Shutdown initiated...
+2021-03-31 13:30:57.389 [ Thread-99 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-19 - Shutdown completed.
+2021-03-31 13:30:57.697 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 13:30:57.698 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 13:30:57.699 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 13:30:57.988 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:30:57.988 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 13:30:57.989 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 13:30:58.008 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 13:30:58.122 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 13:30:58.127 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-20 - Starting...
+2021-03-31 13:30:58.169 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-20 - Start completed.
+2021-03-31 13:30:58.170 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 13:30:58.183 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 13:30:58.325 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:30:58.344 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 0.73 seconds (JVM running for 4076.672)
+2021-03-31 13:31:00.236 [ Thread-104 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-20 - Shutdown initiated...
+2021-03-31 13:31:00.257 [ Thread-104 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-20 - Shutdown completed.
+2021-03-31 13:31:00.348 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 9800 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 13:31:00.349 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 13:31:00.349 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 13:31:00.762 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:31:00.763 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 13:31:00.764 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 13:31:00.789 [ restartedMain ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 13:31:00.860 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 13:31:00.860 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-21 - Starting...
+2021-03-31 13:31:00.890 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-21 - Start completed.
+2021-03-31 13:31:00.890 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 13:31:00.900 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 13:31:01.408 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 13:31:01.425 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.111 seconds (JVM running for 4079.754)
+2021-03-31 13:31:05.659 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 13:31:05.676 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[]}
+2021-03-31 13:31:05.680 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-03-31 13:31:11.678 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.blog', args=[]}
+2021-03-31 13:31:11.678 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : blog
+2021-03-31 16:31:10.167 [ HikariPool-21 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 787 ] - HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=1h28m38s300ms446µs533ns).
+2021-03-31 18:03:23.145 [ HikariPool-21 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 787 ] - HikariPool-21 - Thread starvation or clock leap detected (housekeeper delta=17m42s550ms236µs645ns).
+2021-03-31 18:07:11.433 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 18600 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 18:07:11.436 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 18:07:11.436 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 18:07:16.755 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 18:07:16.757 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 18:07:16.758 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 18:07:17.076 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 18:07:17.730 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 18:07:18.302 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-31 18:07:19.150 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-31 18:07:19.602 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-03-31 18:07:21.048 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-03-31 18:07:21.161 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 18:07:45.006 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 18:07:46.381 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 18:07:46.476 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 37.835 seconds (JVM running for 42.25)
+2021-03-31 19:18:53.435 [ HikariPool-1 housekeeper ] - [ WARN  ] [ com.zaxxer.hikari.pool.HikariPool : 787 ] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m31s794ms675µs647ns).
+2021-03-31 19:50:20.852 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 16756 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 19:50:20.852 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 19:50:20.852 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 19:50:22.733 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 19:50:22.733 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 19:50:22.733 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 19:50:22.853 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 19:50:23.134 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 19:50:23.174 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-31 19:50:23.254 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-31 19:50:23.334 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-03-31 19:50:23.634 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-03-31 19:50:23.744 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 19:50:25.719 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 19:50:27.911 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 19:50:27.971 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 7.874 seconds (JVM running for 9.22)
+2021-03-31 19:51:04.297 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 19:52:21.379 [ http-nio-8080-exec-10 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/admin/login, Exception : Required String parameter 'username' is not present
+2021-03-31 19:55:09.973 [ http-nio-8080-exec-7 ] - [ WARN  ] [ org.apache.catalina.util.SessionIdGeneratorBase : 173 ] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [358] milliseconds.
+2021-03-31 20:11:51.605 [ http-nio-8080-exec-6 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/admin/login, Exception : Request method 'GET' not supported
+2021-03-31 20:13:53.567 [ http-nio-8080-exec-9 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/admin/login, Exception : Request method 'GET' not supported
+2021-03-31 20:15:57.570 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 18844 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 20:15:57.570 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 20:15:57.580 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 20:15:59.223 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:15:59.223 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 20:15:59.223 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 20:15:59.313 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 20:15:59.533 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 20:15:59.583 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-31 20:15:59.703 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-31 20:15:59.823 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-03-31 20:16:00.263 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-03-31 20:16:00.283 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 20:16:01.214 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 20:16:02.875 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:16:02.936 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 5.994 seconds (JVM running for 8.919)
+2021-03-31 20:16:08.610 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 20:16:14.775 [ http-nio-8080-exec-4 ] - [ WARN  ] [ org.apache.catalina.util.SessionIdGeneratorBase : 173 ] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [354] milliseconds.
+2021-03-31 20:16:41.787 [ http-nio-8080-exec-3 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/admin/login, Exception : Request method 'GET' not supported
+2021-03-31 20:18:12.167 [ http-nio-8080-exec-3 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/admin/login, Exception : Request method 'GET' not supported
+2021-03-31 20:26:00.492 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2021-03-31 20:26:00.532 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2021-03-31 20:26:00.752 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 18844 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 20:26:00.752 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 20:26:00.752 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 20:26:01.172 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:26:01.172 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 20:26:01.172 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 20:26:01.192 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 20:26:01.373 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 20:26:01.383 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-2 - Starting...
+2021-03-31 20:26:01.423 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-2 - Start completed.
+2021-03-31 20:26:01.423 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 20:26:01.633 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 20:26:02.403 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:26:02.433 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.799 seconds (JVM running for 608.41)
+2021-03-31 20:26:04.337 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-2 - Shutdown initiated...
+2021-03-31 20:26:04.377 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-2 - Shutdown completed.
+2021-03-31 20:26:04.659 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 18844 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 20:26:04.660 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 20:26:04.660 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 20:26:05.128 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:26:05.129 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 20:26:05.129 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 20:26:05.146 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 20:26:05.241 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 20:26:05.247 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-3 - Starting...
+2021-03-31 20:26:05.307 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-3 - Start completed.
+2021-03-31 20:26:05.308 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 20:26:05.508 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 20:26:06.339 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:26:06.369 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.927 seconds (JVM running for 612.344)
+2021-03-31 20:26:06.549 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 20:26:10.818 [ http-nio-8080-exec-5 ] - [ ERROR ] [ com.yltfy.blog.handler.ControllerExceptionHandler : 21 ] - Request URL : http://localhost:8080/admin/login, Exception : Request method 'GET' not supported
+2021-03-31 20:26:55.995 [ Thread-13 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-3 - Shutdown initiated...
+2021-03-31 20:26:56.015 [ Thread-13 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-3 - Shutdown completed.
+2021-03-31 20:26:56.155 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 18844 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 20:26:56.155 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 20:26:56.155 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 20:26:56.614 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:26:56.614 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 20:26:56.614 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 20:26:56.624 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 20:26:56.724 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 20:26:56.724 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-4 - Starting...
+2021-03-31 20:26:56.754 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-4 - Start completed.
+2021-03-31 20:26:56.754 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 20:26:56.961 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 20:26:58.051 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:26:58.091 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 2.004 seconds (JVM running for 664.072)
+2021-03-31 20:26:59.972 [ Thread-18 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-4 - Shutdown initiated...
+2021-03-31 20:26:59.993 [ Thread-18 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-4 - Shutdown completed.
+2021-03-31 20:27:00.122 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 18844 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-03-31 20:27:00.122 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-31 20:27:00.123 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-03-31 20:27:00.485 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:27:00.486 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-03-31 20:27:00.486 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-31 20:27:00.502 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-03-31 20:27:00.589 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-31 20:27:00.593 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-5 - Starting...
+2021-03-31 20:27:00.653 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-5 - Start completed.
+2021-03-31 20:27:00.654 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-31 20:27:00.840 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-31 20:27:01.626 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-03-31 20:27:01.644 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.575 seconds (JVM running for 667.619)
+2021-03-31 20:27:01.691 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-31 20:49:29.224 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-5 - Shutdown initiated...
+2021-03-31 20:49:29.244 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-5 - Shutdown completed.
