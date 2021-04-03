@@ -21,7 +21,7 @@
                     <div class="ui dropdown item">
                         <div class="text">
                             <img src="https://picsum.photos/id/10/100/100" th:src="@{${session.user.avatar}}" alt="" class="ui avatar image">
-                            <span th:text="${session.user.nickName}">白泽<span/>
+                            <span th:text="${session.user.nickName}">白泽</span>
                         </div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
@@ -49,20 +49,20 @@
     <!--  中间内容  -->
     <div class="m-padded-tb-big m-container-small">
         <div class="ui container">
-            <form action="#" method="POST" class="ui segment form">
+            <div method="POST" class="ui segment form">
                 <!-- inline表示内联，并且内部有多个field -->
+                <input type="hidden" name="page">
                 <div class="inline fields">
                     <div class="field">
                         <input type="text" name="title" placeholder="标题">
                     </div>
                     <div class="field">
                         <div class="ui selection dropdown">
-                            <input type="hidden" name="type">
+                            <input type="hidden" name="typeId">
                             <i class="dropdown icon"></i>
                             <div class="default text">分类</div>
                             <div class="menu">
-                                <div class="item" data-value="1">Java</div>
-                                <div class="item" data-value="2">C/C++</div>
+                                <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">C++</div>
                             </div>
                         </div>
                     </div>
@@ -73,15 +73,16 @@
                         </div>
                     </div>
                     <div class="field">
-                        <button class="ui mini teal basic button">
+                        <button type="button" id="search-btn" class="ui mini teal basic button">
                             <i class="search icon"></i>搜索
                         </button>
                     </div>
                 </div>
-            </form>
+            </div>
 
-            <table class="ui table">
-                <thead>
+            <div id="table-container">
+                <table th:fragment="blogList" class="ui table">
+                    <thead>
                     <tr>
                         <th></th>
                         <th>标题</th>
@@ -90,65 +91,35 @@
                         <th>更新时间</th>
                         <th>操作</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>刻意练习清单</td>
-                        <td>Java</td>
-                        <td>是</td>
-                        <td>2021-03-28 09:45</td>
+                    </thead>
+                    <tbody>
+                    <!--    这里的blog就是list集合中取出的Blog对象的实例，它的属性直接打点调用    -->
+                    <tr th:each="blog, iterStat : ${page.content}">
+                        <td th:text="${iterStat.count}">1</td>
+                        <td th:text="${blog.title}">刻意练习清单</td>
+                        <td th:text="${blog.type.name}">Java</td>
+                        <td th:text="${blog.recommend} ? '是' : '否'">是</td>
+                        <td th:text="${blog.updateTime}">2021-03-28 09:45</td>
                         <td>
-                            <a href="#" class="ui mini teal basic button">编辑</a>
-                            <a href="#" class="ui mini red basic button">删除</a>
+                            <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+                            <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>刻意练习清单</td>
-                        <td>Java</td>
-                        <td>是</td>
-                        <td>2021-03-28 09:45</td>
-                        <td>
-                            <a href="#" class="ui mini teal basic button">编辑</a>
-                            <a href="#" class="ui mini red basic button">删除</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>刻意练习清单</td>
-                        <td>Java</td>
-                        <td>是</td>
-                        <td>2021-03-28 09:45</td>
-                        <td>
-                            <a href="#" class="ui mini teal basic button">编辑</a>
-                            <a href="#" class="ui mini red basic button">删除</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>刻意练习清单</td>
-                        <td>Java</td>
-                        <td>是</td>
-                        <td>2021-03-28 09:45</td>
-                        <td>
-                            <a href="#" class="ui mini teal basic button">编辑</a>
-                            <a href="#" class="ui mini red basic button">删除</a>
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot>
+                    </tbody>
+                    <tfoot>
                     <tr>
                         <th colspan="6">
-                            <div class="ui mini pagination menu">
-                                <a href="#" class="item">上一页</a>
-                                <a href="#" class="item">下一页</a>
+                            <div class="ui mini pagination menu" th:if="${page.totalPages} > 1">
+                                <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">上一页</a>
+                                <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="item" th:unless="${page.last}">下一页</a>
                             </div>
                             <a href="#" class="ui mini right floated teal basic button">新增</a>
                         </th>
                     </tr>
-                </tfoot>
-            </table>
+                    </tfoot>
+                </table>
+            </div>
+
         </div>
     </div>
 
@@ -201,6 +172,25 @@
         $('.ui.dropdown').dropdown({
             on: 'hover'
         });
+
+        function page(obj) {
+            $("[name = 'page']").val($(obj).data("page"));
+            loaddata();
+        }
+
+        //为搜索按钮设定了一个点击事件发送ajax请求
+        $("#search-btn").click(function () {
+            loaddata();
+        });
+
+        function loaddata() {
+            $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
+               title : $("[name='title']").val(),
+               typeId : $("[name='typeId']").val(),
+               recommend : $("[name='recommend']").prop('checked'),
+               page : $("[name='page']").val()
+            });
+        }
     </script>
 </body>
 </html>
