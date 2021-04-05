@@ -11,12 +11,14 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -25,6 +27,7 @@ public class BlogServiceImpl implements BlogService {
     private BlogRepository blogRepository;
 
     @Override
+    @Transactional
     public Blog getBlog(Long id) {
         return blogRepository.findById(id).get();
     }
@@ -32,6 +35,7 @@ public class BlogServiceImpl implements BlogService {
     //JPA提供了接口供用户去进行组合查询 Specification<Blog>()中记录了多条件查询你的规则
     //Pageable记录了分页的规则
     @Override
+    @Transactional
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
         //blog对象中存放着需要查询的条件 某个字段有值表示该字段需要作为查询条件
         return blogRepository.findAll(new Specification<Blog>() {
@@ -43,9 +47,9 @@ public class BlogServiceImpl implements BlogService {
                     //like方法第一个参数是属性名 第二参数是属性值 这里为了模糊查询在拼接查询条件
                     predicates.add(criteriaBuilder.like(root.<String>get("title"), "%" + blog.getTitle() + "%"));
                 }
-                if (blog.getTypeId() != null) {
+                if (blog.getType() != null) {
                     //这里用的是equal方法而不是上一个like的模糊查询 同样是属性名 与属性值
-                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"), blog.getTypeId()));
+                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"), blog.getType()));
                 }
                 if (blog.isRecommend()) {
                     //isRecommend这里不是get方法是因为它是Boolean值，所以loombok提供了isXX的方法
@@ -59,11 +63,26 @@ public class BlogServiceImpl implements BlogService {
 
     //新增博客
     @Override
+    @Transactional
     public Blog saveBlog(Blog blog) {
+        //这里的参数blog只是携带了flag 标题 内容 分类 标签 首图 推荐 用户等
+        if (blog.getId() == null) {
+            blog.setCreateTime(new Date());
+            blog.setUpdateTime(new Date());
+            blog.setViews(0);
+        } else {
+            //这里的blog并不是数据库中完全的blog，只是携带了一部分更新信息的blog的blog，
+            //这里我尝试先查出对应的blog的对象，将其会被覆盖的值提前存入新的blog
+            Blog blogTure = blogRepository.findById(blog.getId()).get();
+            blog.setCreateTime(blogTure.getCreateTime());
+            blog.setViews(blogTure.getViews());
+            blog.setUpdateTime(new Date());
+        }
         return blogRepository.save(blog);
     }
 
     //更新博客
+    @Transactional
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog blog1 = blogRepository.findById(id).get();
@@ -77,6 +96,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    @Transactional
     public void deleteBlog(Long id) {
         blogRepository.deleteById(id);
     }

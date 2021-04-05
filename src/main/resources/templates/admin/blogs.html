@@ -39,8 +39,8 @@
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
-                <a href="#" th:href="@{/admin/types/input}" class="item">新增</a>
-                <a href="#" th:href="@{/admin/types}" class="teal active item">列表</a>
+                <a href="#" th:href="@{/admin/blogs/input}" class="item">新增</a>
+                <a href="#" th:href="@{/admin/blogs}" class="teal active item">列表</a>
             </div>
         </div>
         
@@ -57,13 +57,16 @@
                         <input type="text" name="title" placeholder="标题">
                     </div>
                     <div class="field">
-                        <div class="ui selection dropdown">
-                            <input type="hidden" name="typeId">
-                            <i class="dropdown icon"></i>
-                            <div class="default text">分类</div>
-                            <div class="menu">
-                                <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">C++</div>
+                        <div class="ui labeled action input">
+                            <div class="ui type selection dropdown">
+                                <input type="hidden" name="type">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">分类</div>
+                                <div class="menu">
+                                    <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">C++</div>
+                                </div>
                             </div>
+                            <button type="button" class="ui clear button compact">clear</button>
                         </div>
                     </div>
                     <div class="field">
@@ -88,6 +91,7 @@
                         <th>标题</th>
                         <th>类型</th>
                         <th>推荐</th>
+                        <th>状态</th>
                         <th>更新时间</th>
                         <th>操作</th>
                     </tr>
@@ -99,6 +103,7 @@
                         <td th:text="${blog.title}">刻意练习清单</td>
                         <td th:text="${blog.type.name}">Java</td>
                         <td th:text="${blog.recommend} ? '是' : '否'">是</td>
+                        <td th:text="${blog.published} ? '发布' : '草稿'">是</td>
                         <td th:text="${blog.updateTime}">2021-03-28 09:45</td>
                         <td>
                             <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
@@ -108,16 +113,22 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th colspan="6">
+                        <th colspan="7">
                             <div class="ui mini pagination menu" th:if="${page.totalPages} > 1">
                                 <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">上一页</a>
                                 <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="item" th:unless="${page.last}">下一页</a>
                             </div>
-                            <a href="#" class="ui mini right floated teal basic button">新增</a>
+                            <a href="#" th:href="@{/admin/blogs/input}" class="ui mini right floated teal basic button">新增</a>
                         </th>
                     </tr>
                     </tfoot>
                 </table>
+
+                <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                    <i class="close icon"></i>
+                    <div class="header">提示：</div>
+                    <p th:text="${message}">恭喜，操作成功！</p>
+                </div>
             </div>
 
         </div>
@@ -153,12 +164,12 @@
                     </div>
                 </div>
                 <div class="seven wide column">
-                    <h4 class="ui inverted header m-text-thin m-text-spaced">YLTFY</h4>
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">白泽</h4>
                     <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
                 </div>
             </div>
             <div class="ui inverted section divider"></div>
-            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 YLTFY Designed by YLTFY </p>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 BaiZe Designed by BaiZe </p>
         </div>
     </footer>
 
@@ -173,6 +184,21 @@
             on: 'hover'
         });
 
+        //消息提示框可关闭
+        $('.message .close')
+        .on('click', function () {
+            $(this)
+            .closest('.message')
+            .transition('fade');
+        });
+
+        //清除分类的查询条件
+        $('.clear.button')
+        .on('click', function () {
+            $('.type.ui.dropdown')
+            .dropdown('clear');
+        });
+
         function page(obj) {
             $("[name = 'page']").val($(obj).data("page"));
             loaddata();
@@ -180,14 +206,18 @@
 
         //为搜索按钮设定了一个点击事件发送ajax请求
         $("#search-btn").click(function () {
+            $("[name = 'page']").val(0);
             loaddata();
         });
 
         function loaddata() {
+            //这里用了ajax请求，并且指定了返回数据的返回区域为table-container内
+            //这里的分页包括了携带条件的分页
             $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
                title : $("[name='title']").val(),
-               typeId : $("[name='typeId']").val(),
+               type : $("[name='type']").val(),
                recommend : $("[name='recommend']").prop('checked'),
+                //这里的搜索将三个条件与page一同传回
                page : $("[name='page']").val()
             });
         }

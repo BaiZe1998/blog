@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>发布</title>
     <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
-    <link rel="stylesheet" href="../../static/css/me.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
 </head>
 <body>
     <!--  导航  -->
@@ -14,18 +14,18 @@
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">管理后台</h2>
-                <a href="#" class="active m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a th:href="@{/admin/blogs}" href="#" class="active m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
+                <a th:href="@{/admin/types}" href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a th:href="@{/admin/tags}" href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
                 <div class="right m-item m-mobile-hide menu">
                     <div class="ui dropdown item">
                         <div class="text">
-                            <img src="https://picsum.photos/id/10/100/100" alt="" class="ui avatar image">
-                            YLTFY 
+                            <img src="https://picsum.photos/id/10/100/100" th:src="@{${session.user.avatar}}" alt="" class="ui avatar image">
+                            <span th:text="${session.user.nickName}">白泽</span>
                         </div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <a href="#" class="item">注销</a>
+                            <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
                         </div>
                     </div>
                 </div>
@@ -39,21 +39,24 @@
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
-                <a href="#" th:href="@{/admin/types/input}" class="item">新增</a>
-                <a href="#" th:href="@{/admin/types}" class="teal active item">列表</a>
+                <a href="#" th:href="@{/admin/blogs/input}" class="teal active item">新增</a>
+                <a href="#" th:href="@{/admin/blogs}" class="item">列表</a>
             </div>
         </div>
         
     </div>
 
     <!--  中间内容  -->
-    <div class="m-padded-tb-big m-container-small">
+    <div class="m-padded-tb-big m-container">
         <div class="ui container">
-            <form action="#" method="POST" class="ui form">   
+            <form id="blog-form" th:object="${blog}" action="#" th:action="@{/admin/blogs}" method="POST" class="ui form">
+                <!--   这里的input框的name用于表示key，input的value表示值   -->
+                <input type="hidden" name="published">
+                <input type="hidden" name="id" th:value="*{id}">
                 <div class="required field">
                     <div class="ui left labeled input">
                         <div class="ui selection compact teal basic dropdown label">
-                            <input type="hidden" value="原创">
+                            <input type="hidden" value="原创" name="flag" th:value="*{flag}">
                             <i class="dropdown icon"></i>
                             <div class="text">原创</div>
                             <div class="menu">
@@ -62,13 +65,13 @@
                                 <div class="item" data-value="翻译">翻译</div>
                             </div>
                         </div>
-                        <input type="text" name="title" placeholder="标题">
+                        <input type="text" name="title" placeholder="标题" th:value="*{title}">
                     </div>
                 </div>
 
-                <div class="field">
+                <div class="required field">
                     <div id="md-content" style="z-index: 1 !important;">
-                        <textarea name="content" style="display: none;">
+                        <textarea name="content" style="display: none;" th:text="*{content}">
                             [TOC]
 
 #### Disabled options
@@ -90,7 +93,7 @@
             images/
             plugins/
             examples/
-            languages/     
+            languages/
             editormd.js
             ...
 
@@ -106,16 +109,17 @@
                 </div>
 
                 <div class="two fields">
-                    <div class="field">
+                    <div class="required field">
                         <div class="ui left labeled action input">
                             <label class="ui compact teal basic label">分类</label>
                             <div class="ui fluid selection dropdown">
-                                <input type="hidden" name="type">
+                                <input type="hidden" name="type" th:value="*{type} != null ? *{type.name}">
                                 <i class="dropdown icon"></i>
                                 <div class="default text">分类</div>
                                 <div class="menu">
-                                    <div class="item" data-value="1">Java</div>
-                                    <div class="item" data-value="2">C/C++</div>
+                                    <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">Java</div>
+<!--                                    <div class="item" data-value="1">Java</div>-->
+<!--                                    <div class="item" data-value="2">C/C++</div>-->
                                 </div>
                             </div>
                         </div>
@@ -124,48 +128,53 @@
                         <div class="ui left labeled action input">
                             <label class="ui compact teal basic label">标签</label>
                             <div class="ui fluid selection multiple search dropdown">
-                                <input type="hidden" name="tag">
+                                <input type="hidden" name="tagIds" th:value="*{tagIds}">
                                 <i class="dropdown icon"></i>
                                 <div class="default text">标签</div>
                                 <div class="menu">
-                                    <div class="item" data-value="1">Java</div>
-                                    <div class="item" data-value="2">C/C++</div>
+                                    <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}" th:text="${tag.name}">Java</div>
+<!--                                    <div class="item" data-value="1">Java</div>-->
+<!--                                    <div class="item" data-value="2">C/C++</div>-->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="field">
+                <div class="required field">
                     <div class="ui left labeled input">
                         <label class="ui teal basic label">首图</label>
-                        <input type="text" name="indexPicture" placeholder="首图引用地址">
+                        <input type="text" name="firstPicture" th:value="*{firstPicture}" placeholder="首图引用地址">
                     </div>
+                </div>
+
+                <div class="required field">
+                    <textarea name="description" th:text="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
                 </div>
 
                 <div class="inline fields">
                     <div class="field">
                         <div class="ui checkbox">
-                            <input type="checkbox" id="recommend" name="recommend" checked class="hidden">
+                            <input type="checkbox" id="recommend" name="recommend" th:checked="*{recommend}" checked class="hidden">
                             <label for="recommend">推荐</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui checkbox">
-                            <input type="checkbox" id="shareInfo" name="shareInfo" class="hidden">
-                            <label for="shareInfo">转载声明</label>
+                            <input type="checkbox" id="shareStatement" name="shareStatement" th:checked="*{shareStatement}" class="hidden">
+                            <label for="shareStatement">转载声明</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui checkbox">
-                            <input type="checkbox" id="appreciation" name="appreciation" class="hidden">
+                            <input type="checkbox" id="appreciation" name="appreciation" th:checked="*{appreciation}" class="hidden">
                             <label for="appreciation">赞赏</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui checkbox">
-                            <input type="checkbox" id="comment" name="comment" class="hidden">
-                            <label for="comment">评论</label>
+                            <input type="checkbox" id="commentabled" name="commentabled" th:checked="*{commentabled}" class="hidden">
+                            <label for="commentabled">评论</label>
                         </div>
                     </div>
                 </div>
@@ -174,8 +183,8 @@
 
                 <div class="ui right aligned container">
                     <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
-                    <button class="ui secondary button">保存</button>
-                    <button class="ui teal button">发布</button>
+                    <button type="button" id="save-btn" class="ui secondary button">保存</button>
+                    <button type="button" id="publish-btn" class="ui teal button">发布</button>
                 </div>
             </form>
         </div>
@@ -191,7 +200,7 @@
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
-                            <img src="../../static/images/wechat.png" class="ui rounded image" style="width: 110px">
+                            <img src="../../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image" style="width: 110px">
                         </div>
                     </div>
                 </div>
@@ -211,19 +220,19 @@
                     </div>
                 </div>
                 <div class="seven wide column">
-                    <h4 class="ui inverted header m-text-thin m-text-spaced">YLTFY</h4>
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">白泽</h4>
                     <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...</p>
                 </div>
             </div>
             <div class="ui inverted section divider"></div>
-            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 YLTFY Designed by YLTFY </p>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 - 2021 BaiZe Designed by BaiZe </p>
         </div>
     </footer>
 
     <!--  引入jq，以及semantic ui的cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-    <script src="../../static/lib/editormd/editormd.min.js"></script>
+    <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
     <script>
         //初始化Markdown编辑器
         var contentEditor;
@@ -232,7 +241,7 @@
                 width   : "100%",
                 height  : 640,
                 syncScrolling : "single",
-                path    : "../../static/lib/editormd/lib/"
+                path    : "/lib/editormd/lib/"
             });
         });
 
@@ -245,14 +254,51 @@
         $('.ui.form').form({
             fields : {
                 title : {
-                    identifier : 'title', 
+                    identifier : 'title',
                     rules: [{
                         type : 'empty',
                         prompt : '标题：请输入博客标题'
                     }]
+                },
+                content : {
+                    identifier : 'content',
+                    rules: [{
+                        type : 'empty',
+                        prompt : '标题：请输入博客内容'
+                    }]
+                },
+                type : {
+                    identifier : 'type',
+                    rules: [{
+                        type : 'empty',
+                        prompt : '标题：请输入博客分类'
+                    }]
+                },
+                firstPicture : {
+                    identifier : 'firstPicture',
+                    rules: [{
+                        type : 'empty',
+                        prompt : '标题：请输入博客首图'
+                    }]
+                },
+                description : {
+                    identifier : 'description',
+                    rules: [{
+                        type : 'empty',
+                        prompt : '标题：请输入博客描述'
+                    }]
                 }
             }
-        })
+        });
+        $('#save-btn').click(function () {
+            //这里通过点击事件直接修改name为published的隐藏的input的val值用于传给后台表示是保存还是发布
+            $('[name="published"]').val(false);
+            $('#blog-form').submit();
+        });
+        $('#publish-btn').click(function () {
+            $('[name="published"]').val(true);
+            $('#blog-form').submit();
+        });
     </script>
 </body>
 </html>
