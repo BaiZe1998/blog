@@ -88,3 +88,5 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
 	... 58 common frames omitted
 [lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-05 17:21:05.467][WARN ][http-nio-8080-exec-5][DirectJDKLog.java:173] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [338] milliseconds.
+[lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-05 19:20:37.448][WARN ][http-nio-8080-exec-1][HqlSqlWalker.java:670] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+[lf-1][SERVER_NAME_IS_UNDEFINED][2021-04-05 19:20:37.554][WARN ][http-nio-8080-exec-1][HqlSqlWalker.java:670] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
