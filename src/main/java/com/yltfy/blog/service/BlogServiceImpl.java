@@ -4,6 +4,7 @@ import com.yltfy.blog.dao.BlogRepository;
 import com.yltfy.blog.exception.NotFoundException;
 import com.yltfy.blog.po.Blog;
 import com.yltfy.blog.po.Type;
+import com.yltfy.blog.util.MarkdownUtils;
 import com.yltfy.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -114,5 +115,27 @@ public class BlogServiceImpl implements BlogService {
         Sort sort = Sort.by(Sort.Direction.DESC, "updateTime");
         Pageable pageable = PageRequest.of(0, size, sort);
         return blogRepository.findTop(pageable);
+    }
+
+    @Override
+    public Page<Blog> listBlog(String query, Pageable pageable) {
+        return blogRepository.findByQuery(query, pageable);
+    }
+
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogRepository.findById(id).get();
+        blog.setViews(blog.getViews() + 1);
+        //这里先将浏览次数+1
+        blogRepository.save(blog);
+        if (blog == null) {
+            throw new NotFoundException("该博客不存在");
+        }
+        //这里由于担心jpa会将数据直接修改数据库中的content字段为html的String，所以进行了一次转换
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog, b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return b;
     }
 }

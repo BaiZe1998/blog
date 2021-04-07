@@ -21,4 +21,8 @@ public interface BlogService {
     void deleteBlog(Long id);
 
     List<Blog> listRecommendBlogTop(Integer size);
+
+    Page<Blog> listBlog(String query, Pageable pageable);
+
+    Blog getAndConvert(Long id);
 }
