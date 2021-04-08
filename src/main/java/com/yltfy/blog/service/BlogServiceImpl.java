@@ -109,6 +109,7 @@ public class BlogServiceImpl implements BlogService {
         blogRepository.deleteById(id);
     }
 
+    @Transactional
     @Override
     public List<Blog> listRecommendBlogTop(Integer size) {
         //这里的updateTime是Blog对象的一个属性，对应了t_blog表中的一个字段
@@ -117,11 +118,13 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.findTop(pageable);
     }
 
+    @Transactional
     @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
         return blogRepository.findByQuery(query, pageable);
     }
 
+    @Transactional
     @Override
     public Blog getAndConvert(Long id) {
         Blog blog = blogRepository.findById(id).get();

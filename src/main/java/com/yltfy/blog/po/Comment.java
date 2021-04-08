@@ -23,6 +23,8 @@ public class Comment {
     @ManyToOne
     private Blog blog;
 
+    private boolean adminComment;
+
     //To左侧的是指本实例对象
     //父亲可以有多个孩子
     @OneToMany(mappedBy = "parentComment")
