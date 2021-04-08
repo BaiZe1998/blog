@@ -357,3 +357,142 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2021-04-08 14:00:51.554 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2021-04-08 14:00:52.404 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
 2021-04-08 14:00:52.424 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 1.464 seconds (JVM running for 539.275)
+2021-04-08 16:34:55.917 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.0.Final
+2021-04-08 16:34:55.919 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 16976 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-04-08 16:34:55.922 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-08 16:34:55.922 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-04-08 16:34:57.536 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-08 16:34:57.536 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-04-08 16:34:57.536 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-08 16:34:57.613 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-04-08 16:34:57.803 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-08 16:34:57.844 [ restartedMain ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-08 16:34:57.931 [ restartedMain ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-08 16:34:58.017 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-04-08 16:34:58.394 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-04-08 16:34:58.427 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-08 16:34:59.301 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-08 16:35:01.117 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-08 16:35:01.162 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 5.972 seconds (JVM running for 7.195)
+2021-04-08 16:38:00.178 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-08 16:38:00.216 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/blog/43', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.blog', args=[43, {}]}
+2021-04-08 16:38:00.500 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : blog
+2021-04-08 16:38:01.545 [ http-nio-8080-exec-3 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/comments/43', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.CommentController.comments', args=[43, {}]}
+2021-04-08 16:38:01.667 [ http-nio-8080-exec-3 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : blog :: commentList
+2021-04-08 16:39:19.166 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/blog/43', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.blog', args=[43, {}]}
+2021-04-08 16:39:19.316 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : blog
+2021-04-08 16:39:20.029 [ http-nio-8080-exec-3 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/comments/43', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.CommentController.comments', args=[43, {}]}
+2021-04-08 16:39:20.111 [ http-nio-8080-exec-3 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : blog :: commentList
+2021-04-08 16:39:20.980 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-04-08 16:39:21.097 [ http-nio-8080-exec-6 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-08 16:39:21.127 [ http-nio-8080-exec-6 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-08 16:39:21.144 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-04-08 16:39:23.216 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, -1]}
+2021-04-08 16:39:23.324 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:36.799 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 2]}
+2021-04-08 16:39:36.825 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:39.898 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 3]}
+2021-04-08 16:39:39.928 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:40.817 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/5', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 5]}
+2021-04-08 16:39:40.839 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:41.685 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/7', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 7]}
+2021-04-08 16:39:41.710 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:42.632 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/8', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 8]}
+2021-04-08 16:39:42.654 [ http-nio-8080-exec-7 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:44.036 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/4', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 4]}
+2021-04-08 16:39:44.059 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:45.401 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/6', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 6]}
+2021-04-08 16:39:45.422 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:46.099 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/9', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 9]}
+2021-04-08 16:39:46.118 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:46.697 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/10', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 10]}
+2021-04-08 16:39:46.718 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:47.254 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/11', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 11]}
+2021-04-08 16:39:47.270 [ http-nio-8080-exec-2 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:48.032 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/12', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 12]}
+2021-04-08 16:39:48.050 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:48.759 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/14', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 14]}
+2021-04-08 16:39:48.778 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:49.361 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/15', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 15]}
+2021-04-08 16:39:49.384 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:39:50.119 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:39:50.146 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:40:16.730 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-04-08 16:40:16.778 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-04-08 16:40:18.187 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/blog/42', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.blog', args=[42, {}]}
+2021-04-08 16:40:18.294 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : blog
+2021-04-08 16:40:19.063 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/comments/42', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.CommentController.comments', args=[42, {}]}
+2021-04-08 16:40:19.069 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : blog :: commentList
+2021-04-08 16:40:22.457 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, -1]}
+2021-04-08 16:40:22.474 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:42:34.097 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.search1', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}, 正确]}
+2021-04-08 16:42:34.198 [ http-nio-8080-exec-4 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : search
+2021-04-08 16:48:25.608 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-04-08 16:48:25.662 [ http-nio-8080-exec-8 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : index
+2021-04-08 16:48:41.138 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, -1]}
+2021-04-08 16:48:41.158 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:48:52.769 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 2]}
+2021-04-08 16:48:52.793 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:48:54.021 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:48:54.048 [ http-nio-8080-exec-9 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:53:26.389 [ http-nio-8080-exec-7 ] - [ WARN  ] [ org.apache.catalina.util.SessionIdGeneratorBase : 173 ] - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [385] milliseconds.
+2021-04-08 16:53:30.119 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:53:30.138 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:53:54.694 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2021-04-08 16:53:54.761 [ Thread-4 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2021-04-08 16:53:54.922 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 16976 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-04-08 16:53:54.923 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-08 16:53:54.923 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-04-08 16:53:56.036 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-08 16:53:56.037 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-04-08 16:53:56.037 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-08 16:53:56.060 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-04-08 16:53:56.234 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-08 16:53:56.245 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-2 - Starting...
+2021-04-08 16:53:56.291 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-2 - Start completed.
+2021-04-08 16:53:56.291 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-08 16:53:56.486 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-08 16:53:57.470 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-08 16:53:57.492 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 2.635 seconds (JVM running for 1143.525)
+2021-04-08 16:53:57.653 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-08 16:53:57.660 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:53:57.674 [ http-nio-8080-exec-1 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-08 16:53:57.766 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:00.434 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 1, size 2, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:00.461 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:07.781 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:07.806 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:11.172 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='127.0.0.1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 1, size 2, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:11.205 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:16.320 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='127.0.0.1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:16.345 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:17.431 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/2', ip='127.0.0.1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}, 2]}
+2021-04-08 16:54:17.453 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:20.099 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:20.129 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:22.315 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='127.0.0.1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 1, size 2, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:22.337 [ http-nio-8080-exec-6 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:34.830 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-2 - Shutdown initiated...
+2021-04-08 16:54:34.896 [ Thread-8 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-2 - Shutdown completed.
+2021-04-08 16:54:35.067 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 55 ] - Starting BlogApplication using Java 11.0.9 on PC-201912231325 with PID 16976 (D:\JavaLearning\blog\target\classes started by Administrator in D:\JavaLearning\blog)
+2021-04-08 16:54:35.067 [ restartedMain ] - [ DEBUG ] [ com.yltfy.blog.BlogApplication : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-08 16:54:35.067 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 666 ] - The following profiles are active: dev
+2021-04-08 16:54:35.612 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-08 16:54:35.615 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2021-04-08 16:54:35.615 [ restartedMain ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-08 16:54:35.652 [ restartedMain ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2021-04-08 16:54:35.792 [ restartedMain ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-08 16:54:35.812 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-3 - Starting...
+2021-04-08 16:54:35.849 [ restartedMain ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-3 - Start completed.
+2021-04-08 16:54:35.849 [ restartedMain ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-08 16:54:36.075 [ restartedMain ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-08 16:54:37.046 [ restartedMain ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-08 16:54:37.063 [ restartedMain ] - [ INFO  ] [ com.yltfy.blog.BlogApplication : 61 ] - Started BlogApplication in 2.076 seconds (JVM running for 1183.096)
+2021-04-08 16:54:37.222 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-08 16:54:37.229 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='127.0.0.1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:37.241 [ http-nio-8080-exec-1 ] - [ WARN  ] [ org.hibernate.orm.deprecation : 670 ] - HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-08 16:54:37.264 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:39.593 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/2', ip='127.0.0.1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 2]}
+2021-04-08 16:54:39.617 [ http-nio-8080-exec-5 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
+2021-04-08 16:54:40.730 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 38 ] - Request : RequestLog{url='http://localhost:8080/types/1', ip='127.0.0.1', classMethod='com.yltfy.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, 1]}
+2021-04-08 16:54:40.750 [ http-nio-8080-exec-10 ] - [ INFO  ] [ com.yltfy.blog.aspect.LogAspect : 49 ] - Result : types
