@@ -103,16 +103,20 @@
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
-                            <img src="../../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image" style="width: 110px">
+                            <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image" style="width: 110px">
                         </div>
                     </div>
                 </div>
                 <div class="three wide column">
                     <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
-                    <div class="ui inverted link list">
-                        <a href="#" class="item">用户故事（User Story）</a>
-                        <a href="#" class="item">用户故事（User Story）</a>
-                        <a href="#" class="item">用户故事（User Story）</a>
+                    <div id="newblog-container">
+                        <div class="ui inverted link list" th:fragment="newblogList">
+                            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" class="item" target="_blank" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+                            <!--/*-->
+                            <a href="#" class="item">用户故事（User Story）</a>
+                            <a href="#" class="item">用户故事（User Story）</a>
+                            <!--*/-->
+                        </div>
                     </div>
                 </div>
                 <div class="three wide column">
@@ -147,7 +151,8 @@
             $(this)
             .closest('.message')
             .transition('fade');
-        })
+        });
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
     </script>
 </body>
 </html>
