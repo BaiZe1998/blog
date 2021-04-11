@@ -25,4 +25,6 @@ public interface BlogService {
     Page<Blog> listBlog(String query, Pageable pageable);
 
     Blog getAndConvert(Long id);
+
+    Page<Blog> listBlog(Long tagId, Pageable pageable);
 }
