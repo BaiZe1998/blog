@@ -188,3 +188,17 @@
 2021-04-13 14:05:17.692 [ main ] - [ INFO  ] [ com.yltfy.blog.BlogApplicationTests : 61 ] - Started BlogApplicationTests in 30.86 seconds (JVM running for 35.22)
 2021-04-13 14:05:18.422 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
 2021-04-13 14:05:18.551 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.
+2021-04-13 14:35:11.537 [ main ] - [ INFO  ] [ com.yltfy.blog.BlogApplicationTests : 55 ] - Starting BlogApplicationTests using Java 11.0.9 on PC-201912231325 with PID 3192 (started by Administrator in D:\JavaLearning\blog)
+2021-04-13 14:35:11.539 [ main ] - [ DEBUG ] [ com.yltfy.blog.BlogApplicationTests : 56 ] - Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 14:35:11.540 [ main ] - [ INFO  ] [ com.yltfy.blog.BlogApplicationTests : 666 ] - The following profiles are active: dev
+2021-04-13 14:35:11.674 [ background-preinit ] - [ INFO  ] [ org.hibernate.validator.internal.util.Version : 21 ] - HV000001: Hibernate Validator 6.1.0.Final
+2021-04-13 14:35:20.341 [ main ] - [ INFO  ] [ org.hibernate.jpa.internal.util.LogHelper : 31 ] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 14:35:21.018 [ main ] - [ INFO  ] [ org.hibernate.Version : 44 ] - HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 14:35:22.024 [ main ] - [ INFO  ] [ org.hibernate.annotations.common.Version : 56 ] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 14:35:23.079 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2021-04-13 14:35:25.689 [ main ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2021-04-13 14:35:25.928 [ main ] - [ INFO  ] [ org.hibernate.dialect.Dialect : 175 ] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-13 14:35:29.126 [ main ] - [ INFO  ] [ o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52 ] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 14:35:33.810 [ main ] - [ INFO  ] [ com.yltfy.blog.BlogApplicationTests : 61 ] - Started BlogApplicationTests in 24.587 seconds (JVM running for 28.956)
+2021-04-13 14:35:34.392 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 350 ] - HikariPool-1 - Shutdown initiated...
+2021-04-13 14:35:34.459 [ SpringContextShutdownHook ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 352 ] - HikariPool-1 - Shutdown completed.

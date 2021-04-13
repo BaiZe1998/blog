@@ -55,7 +55,7 @@ public class BlogController {
         //这里默认是templates目录下，这里的pagable可以控制分页的页数以及携带条件进行分页的ajax
         model.addAttribute("page", blogService.listBlog(pageable, blog));
         //这是一种局部刷新的技术，提交到某个页面的某个部分，这样其余部分的数据将保持不变
-        return "/admin/blogs :: blogList";
+        return "admin/blogs :: blogList";
     }
 
     @GetMapping("/blogs/input")
