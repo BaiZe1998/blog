@@ -218,7 +218,7 @@
         function loaddata() {
             //这里用了ajax请求，并且指定了返回数据的返回区域为table-container内
             //这里的分页包括了携带条件的分页
-            $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
+            $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search", {
                title : $("[name='title']").val(),
                type : $("[name='type']").val(),
                recommend : $("[name='recommend']").prop('checked'),
